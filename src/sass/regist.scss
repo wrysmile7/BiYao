@@ -1,0 +1,92 @@
+*{margin: 0;padding: 0;}
+a{
+	text-decoration: none;
+}
+ul li{
+	list-style:none;
+}
+input{
+	outline: none;
+}
+.main{
+	width: 100%;
+	height: 670px;
+	background: #f9f9f9;
+	border-top: 1px solid #ccc;
+	.box{
+		width: 400px;
+		height: 420px;
+		margin: auto;
+		padding-top: 35px;
+		box-sizing: border-box;
+		h4{
+			height: 25px;
+			width: 400px;
+			font-size: 20px;
+			color: #523669;
+			font-weight: normal;
+			line-height: 25px;
+			b{
+				display: inline-block;
+				width: 25px;
+				height: 25px;
+				margin-right: 10px;
+				float: left;
+				background: url(../img/sprit_biyao.png) no-repeat center center;
+				background-position: 0 -522px;
+			}
+		}
+		.frm{
+			width: 400px;
+			height: 230px;
+			margin-top: 20px;
+			font-size: 12px;
+			.text{
+				width: 400px;
+				height: 40px;
+				box-sizing: border-box;
+				border: 1px solid #ccc;
+				padding-left: 20px;
+				margin-bottom: 20px;
+			}
+			.yzm{
+				width: 240px;
+			}
+			.hqyzm{
+				width: 140px;
+				height: 40px;
+				background: #724a88;
+				color: #fff;
+				border: none;
+				float: right;
+			}
+			label{
+				cursor: pointer;
+				float: left;
+				.check{
+					width: 15px;
+					height: 15px;
+					float: left;
+					margin-right: 10px;
+					background: url(../img/commonSprite.png) no-repeat 0 -80px;
+				}
+			}
+			a{
+				float: left;
+				color: #07a6ea;
+				margin-left: 20px;
+			}
+			
+			#btn{
+				width: 400px;
+				height: 50px;
+				color: #fff;
+				font-size: 20px;
+				background: #f49f26;
+				border: none;
+				margin-top: 30px;
+				cursor: pointer;
+			}
+		}
+	}
+}
