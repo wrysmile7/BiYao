@@ -1,5 +1,1 @@
-require(["config"], function(){
-	require(["load"], function(){
-
-	});
-});
+"use strict";require(["config"],function(){require(["load"],function(){})});

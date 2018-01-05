@@ -29,7 +29,7 @@ gulp.task("js", function(){
 			presets : ["es2015"]
 		}))
 		.pipe(uglify())
-		.pipe(gulp.dest("dist/js"))
+		.pipe(gulp.dest("src/js"))
 		.pipe(connect.reload());
 });
 
@@ -52,7 +52,7 @@ gulp.task("copy", ["lib", "images", "mock"]);
 gulp.task("sass", function(){
 	gulp.src("src/sass/*.scss")
 		.pipe(sass({outputStyle:"compressed"}))
-		.pipe(gulp.dest("src/css"))
+		.pipe(gulp.dest("dist/css"))
 		.pipe(connect.reload());
 });
 

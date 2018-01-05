@@ -7,9 +7,9 @@
 	width: 100%;
 	height: 30px;
 	margin: auto;
-	background: #333;
+	background: #333333;
 }
-.contiuner_top .box{
+.connt{
 	width: 1080px;
 	height: 30px;
 	margin:auto;
@@ -23,8 +23,65 @@
 .contiuner_top a{
 	color: #ccc;
 }
+.connt ul{
+	float: right;
+	height: 30px;
+}
+.connt ul li{
+	padding: 0 10px;
+	float: left;
+	color: #ccc;
+}
+.dope{
+	background: url(../img/msgcenter.png) no-repeat 12px 10px;
+}
+.cart{
+	background: #523669 url(../img/shopCar.png) no-repeat 12px 8px;
+}
 .contiuner_search{
 	width: 1080px;
 	height: 105px;
 	margin: auto;
+	padding-top: 25px;
+}
+h1{
+	width: 239px;
+	height: 51px;
+	float: left;
+}
+.contiuner_search .box{
+	float: right;
+}
+.search{
+	width: 540px;
+	height: 40px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.search .text{
+	width: 497px;
+	height: 40px;
+	float: left;
+	margin-left: 2px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	border: none;
+	border-right: 1px solid #ccc;
+}
+.search button{
+	width: 40px;
+	height: 40px;
+	float: left;
+	border: none;
+	background: url(../img/search.png) no-repeat center center;
+}
+.search ul{
+	width: 473px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 12px;
+	padding-top: 10px;
+}
+.search ul li a{
+	color: #808080;
 }

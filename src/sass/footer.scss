@@ -1,0 +1,34 @@
+.foot{
+	width: 1080px;
+	height: 440px;
+	margin: auto;
+}
+.foot_top{
+	width: 1080px;
+	height: 120px;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around;
+}
+
+.foot_top dl{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.foot_connt{
+	width: 1080px;
+	height: 320px;
+	box-sizing: border-box;
+	padding-top: 30px;
+}
+.foot_connt .box{
+	height: 140px;
+	width: 1080px;
+}
+.foot_connt .box .left{
+	width: 830px;
+	height: 140px;
+	border-right: 1px solid #ccc;
+}
