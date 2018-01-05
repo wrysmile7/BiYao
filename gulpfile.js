@@ -52,7 +52,7 @@ gulp.task("copy", ["lib", "images", "mock"]);
 gulp.task("sass", function(){
 	gulp.src("src/sass/*.scss")
 		.pipe(sass({outputStyle:"compressed"}))
-		.pipe(gulp.dest("dist/css"))
+		.pipe(gulp.dest("src/css"))
 		.pipe(connect.reload());
 });
 
