@@ -1,10 +1,3 @@
-*{margin: 0;padding: 0;}
-a{
-	text-decoration: none;
-}
-ul li{
-	list-style:none;
-}
 .main{
 	width: 100%;
 	background: #f9f9f9;
@@ -171,6 +164,147 @@ ul li{
 				transition: all 1s; /*值1表示所有属性 值2表示过渡动画的时间*/
 				&:hover{
 					width: 620px;
+				}
+			}
+		}
+	}
+	.lists{
+		width: 1080px;
+		margin: auto;
+		p{
+			height: 24px;
+			font-size: 24px;
+			line-height: 24px;
+			color: #333;
+			margin-top: 40px;
+			margin-bottom: 20px;
+			span{
+				float: right;
+				font-size: 16px;
+			}
+		}
+		.box{
+			width: 1080px;
+			height: 280px;
+			margin-bottom: 15px;
+			display: flex;
+			justify-content: space-between;
+			text-align: center;
+			a{
+				color: #333333;
+				width: 205px;
+				background: #fff;
+				overflow: hidden;
+				i{
+					display: inline-block;
+					width: 205px;
+					height: 205px;
+					overflow: hidden;
+					img{
+    					transition: 1s;
+    					&:hover{
+    						transform: scale(1.1);
+    					}
+					}
+				}
+				span{
+					display: inline-block;
+					margin-top: 15px;
+					font-size: 20px;
+				}
+				dl{
+					dt{
+						margin-top: 15px;
+					}
+					dd{
+						margin-top: 5px;
+						color: #ff3333;
+					}
+				}
+			}
+			.firsts{
+				width: 425px;
+				i{
+					display: inline-block;
+					width: 425px;
+					height: 205px;
+					img{
+						width: 464px;
+						height: 205px;
+						position: relative;
+    					left: -20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.fixds{
+	width: 48px;
+	height: 96px;
+	position: fixed;
+	right: 30px;
+	bottom: 100px;
+	cursor: pointer;
+	li{
+		width: 48px;
+		height: 48px;
+		&:nth-child(1){
+			background: url(../img/index/rightBar-code.png) no-repeat;
+			div{
+				width: 276px;
+				position: absolute;
+				left: -280px;
+				top: -65px;
+				padding-top: 5px;
+				background: #fff;
+				border-radius: 4px;
+    			box-shadow: 0 1px 10px 4px rgba(0,0,0,.05);
+    			display: none;
+				span{
+					width: 15px;
+					height: 48px;
+					position: absolute;
+					right: -15px;
+					top: 65px;
+					background: url(../img/index/right-triangle.png) no-repeat center center;
+				}
+				dl{
+					width: 130px;
+					padding: 4px 4px 10px 4px;
+					float: left;
+					dt{
+						width: 125px;
+						img{
+							width: 125px;
+							height: 125px;
+						}
+					}
+					dd{
+						font-size: 14px;
+						color: #523669;
+						text-align: center;
+					}
+				}
+			}
+			&:hover{
+				background: url(../img/index/rightBar-codeActive.png) no-repeat;
+				div{
+					display: block;					
+				}
+			}
+		}
+		&:nth-child(2){
+			a{
+				display: inline-block;
+				width: 48px;
+				height: 48px;
+				background: url(../img/index/rightBar-top.png) no-repeat;				
+			}
+			&:hover{
+				a{
+					background: url(../img/index/rightBar-topActive.png) no-repeat;
 				}
 			}
 		}
