@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<script src="/lib/requirejs/require.js" data-main="/js/cart"></script>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/cart.css">
+</head>
+<body>
+	<div class="header">
+	</div>
+	<div class="main">
+		<div class="teps">
+			<ul>
+				<li>查看购物车</li>
+				<li>确认订单信息</li>
+				<li>在线付款</li>
+				<li>收货并评价</li>
+			</ul>
+		</div>
+		<div class="connts">
+			<h3>购物车</h3>
+			<div class="tatle">
+				<p class="p_l">
+					<span><i></i>全选</span>
+					<span>商品信息</span>
+				</p>
+				<p class="p_r">
+					<span>单价</span>
+					<span>数量</span>
+					<span>小计</span>
+					<span>操作</span>
+				</p>
+			</div>
+			<div class="cart_body"></div>
+			<div class="bot">
+				<p class="p_l">
+					<span><i></i>全选</span>
+					<span><a href="javascript:void(0)">删除</a></span>
+				</p>
+				<p class="p_r">
+					<span>商品总数<i id="num">0</i>件</span>
+					<span>商品总价：<i id="price">¥0</i></span>
+				</p>
+			</div>
+			<div class="balan">
+				<a href="/html/man.html" class="a_l">继续购物</a>
+				<p class="a_r">
+					<span>合计：<i>¥0</i></span>
+					<a href="/html/pay.html" class="pays">结算</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+.hid{
+	display: none;
+}
+.main{
+	width: 100%;
+	border-top: 1px solid #ccc;
+	background: #f9f9f9;
+	padding-bottom: 100px;
+	.teps{
+		width: 560px;
+		height: 42px;
+		position: absolute;
+		top: 40px;
+		right: 100px;
+		background: url(../img/cart/car_steps.png) no-repeat;
+		background-position: -30px -45px;
+		ul{
+			width: 560px;
+			height: 19px;
+			color: #724a88;
+			font-size: 12px;
+			margin-top: 40px;
+			li{
+				width: 140px;
+				height: 19px;
+				float: left;
+				text-align: center;
+			}
+		}
+	}
+	.connts{
+		width: 1080px;
+		margin: auto;
+		h3{
+			width: 1080px;
+			border-bottom: 1px solid #ccc;
+			font-size: 18px;
+			font-weight: normal;
+			color: #523669;
+			box-sizing: border-box;
+			padding-top: 30px;
+			padding-bottom: 10px;
+		}
+		.addres{
+			width: 1080px;
+			height: 192px;
+			box-sizing: border-box;
+			padding-top: 20px;
+			.add_box{
+				width: 281px;
+				height: 172px;
+				box-sizing: border-box;
+				border: 1px solid #724a88;
+				background: #f5f5f5;
+				float: left;
+				margin-right: 20px;
+				color: #724a88;
+				padding: 0 12px;
+				font-size: 14px;
+				p{
+					margin-top: 10px;
+					span{
+						margin-right: 10px;
+						i{
+							float: left;
+							width: 14px;
+							height: 15px;
+							position: relative;
+							top: 2px;
+							background: url(../img/pay/sprit_biyao.png) no-repeat;
+							background-position: -432px -94px;
+						}
+					}
+					&:nth-child(1){
+						padding-bottom: 20px;
+					}
+					&:nth-child(3){
+						font-size: 12px;
+					}
+					&:nth-child(4){
+						padding-top: 20px;
+					}
+					b{
+						width: 65px;
+						float: right;
+						font-weight: normal;
+						display: flex;
+						justify-content: space-between;
+						a{
+							color: #07a6df;
+						}
+					}
+				}
+			}
+			.to_add_box{
+				width: 281px;
+				height: 172px;
+				border: 1px solid #ccc;
+				float: left;
+				text-align: center;
+				position: relative;
+				i{
+					display: block;
+					width: 52px;
+					height: 52px;
+					position: absolute;
+					top: 50px;
+					left: 114px; 
+					background: url(../img/pay/sprit_biyao.png) no-repeat;
+					background-position: -218px -109px;
+				}
+				&:hover{
+					background: #fff;
+					em{
+						color: #666;
+					}
+				}
+				em{
+					font-style: normal;
+					color: #999;
+					font-size: 18px;
+					position: absolute;
+					top: 105px;
+					left: 95px;
+				}
+			}
+		}
+		.bill{
+			width: 1080px;
+			font-size: 14px;
+			color: #666;
+			padding: 20px;
+			i{
+				width: 15px;
+				height: 15px;
+				float: left;
+				margin-right: 10px;
+				position: relative;
+				top: 2px;
+				background: url(../img/pay/commonSprite.png) no-repeat 0 -80px;
+			}
+		}
+		.leav_word{
+			width: 1080px;
+			height: 110px;
+			background: #f6f6f6;
+			font-size: 12px;
+			color: #666;
+			padding: 10px 20px;
+			box-sizing: border-box;
+			span{
+				position: relative;
+				top: -80px;
+				margin-right: 15px;
+			}
+			.texts{
+				width: 400px;
+				height: 80px;
+				resize: none;
+				line-height: 16px;
+				outline: none;
+				padding: 5px;
+			}
+		}
+		.bottoms{
+			width: 1080px;
+			height: 176px;
+			background: #fff;
+			margin-top: 40px;
+			text-align: right;
+			padding: 30px;
+			box-sizing: border-box;
+			p{
+				font-size: 14px;
+				color: #666;
+				line-height: 30px;
+				em{
+					color: #f49f26;
+					font-style: normal;
+					padding: 0 3px;
+				}
+				i{
+					display: inline-block;
+					width: 80px;
+					color: #f49f26;
+					font-style: normal;
+				}
+				b{
+					display: inline-block;
+					width: 80px;
+					color: #f49f26;
+					font-size: 18px;
+				}
+				a{
+					display: inline-block;
+					width: 120px;
+					height: 40px;
+					text-align: center;
+					line-height: 40px;
+					color: #fff;
+					font-size: 16px;
+					margin-top: 20px;
+					&:first-child{
+						color:#999;
+						border: 1px solid #ccc;
+						box-sizing: border-box;
+					}
+					&:last-child{
+						background: #f49f26;
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+	}
+}

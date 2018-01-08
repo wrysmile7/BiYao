@@ -1,0 +1,183 @@
+.hid{
+	display: none;
+}
+.main{
+	width: 100%;
+	border-top: 1px solid #ccc;
+	background: #f9f9f9;
+	padding-bottom: 100px;
+	.teps{
+		width: 560px;
+		height: 42px;
+		position: absolute;
+		top: 40px;
+		right: 100px;
+		background: url(../img/cart/car_steps.png) no-repeat;
+		background-position: -30px -5px;
+		ul{
+			width: 560px;
+			height: 19px;
+			color: #724a88;
+			font-size: 12px;
+			margin-top: 40px;
+			li{
+				width: 140px;
+				height: 19px;
+				float: left;
+				text-align: center;
+			}
+		}
+	}
+	.connts{
+		width: 1080px;
+		margin: auto;
+		h3{
+			width: 1080px;
+			border-bottom: 1px solid #ccc;
+			font-size: 18px;
+			font-weight: normal;
+			color: #523669;
+			box-sizing: border-box;
+			padding: 0 10px;
+			padding-top: 30px;
+			padding-bottom: 10px;
+		}
+		.tatle{
+			width: 1080px;
+			height: 37px;
+			font-size: 12px;
+			padding: 0 10px;
+			color: #523669;
+			.p_l{
+				width: 600px;
+				height: 37px;
+				float: left;
+				span{
+					float: left;
+					height: 37px;
+					line-height: 37px;
+					margin-right: 130px;
+					i{
+						display: inline-block;
+						width: 15px;
+						height: 15px;
+						position: relative;
+						top: 3px;
+						background: url(../img/cart/commonSprite.png) no-repeat;
+						background-position: -20px -80px;
+						margin-right: 10px;
+					}
+				}
+			}
+			.p_r{
+				float: right;
+				width: 420px;
+				height: 37px;
+				span{
+					width: 120px;
+					float: left;
+					text-align: center;
+					line-height: 37px;
+					&:last-child{
+						width: 60px;
+					}
+				}
+			}
+		}
+		.cart_body{
+			width: 1080px;
+		}
+		.bot{
+			width: 1080px;
+			height: 32px;
+			margin: 10px 0;
+			padding: 0 10px;
+			box-sizing: border-box;
+			font-size: 12px;
+			.p_l{
+				width: 120px;
+				float: left;
+				span{
+					float: left;
+					height: 32px;
+					line-height: 32px;
+					margin-right: 15px;
+					i{
+						display: inline-block;
+						width: 15px;
+						height: 15px;
+						position: relative;
+						top: 3px;
+						background: url(../img/cart/commonSprite.png) no-repeat;
+						background-position: -20px -80px;
+						margin-right: 10px;
+					}
+					a{
+						color: #07a6df;
+					}
+				}
+			}
+			.p_r{
+				float: right;
+				font-size: 14px;
+				color: #666;
+				span{
+					margin-right: 30px;
+					i{
+						font-style: normal;
+						color: #f49f26;
+					}
+				}
+			}
+		}
+		.balan{
+			width: 1080px;
+			height: 50px;
+			background: #eeecef;
+			border-top: 1px solid #d5cdda;
+			line-height: 50px;
+			padding: 0 10px;
+			padding-top: 8px;
+			box-sizing: border-box;
+			.a_l{
+				float: left;
+				width: 100px;
+				height: 33px;
+				background: #724A88;
+				line-height: 33px;
+				color: #fff;
+				font-size: 16px;
+				text-align: center;
+			}
+			.a_r{
+				float: right;
+				span{
+					display: inline-block;
+					float: left;
+					height: 33px;
+					line-height: 33px;
+					font-size: 12px;
+					color: #666;
+					i{
+						font-style: normal;
+						color: #f49f26;
+						float: right;
+						/*line-height: 33px;*/
+						font-size: 20px;
+					}
+				}
+				.pays{
+					width: 85px;
+					height: 33px;
+					color: #fff;
+					text-align: center;
+					line-height: 33px;
+					font-size: 18px;
+					background: #f49f26;
+					margin-left: 30px;
+					float: right;
+				}
+			}
+		}
+	}
+}

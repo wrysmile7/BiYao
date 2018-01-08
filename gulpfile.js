@@ -29,7 +29,7 @@ gulp.task("js", function(){
 			presets : ["es2015"]
 		}))
 		.pipe(uglify())
-		.pipe(gulp.dest("src/js"))
+		.pipe(gulp.dest("dist/js"))
 		.pipe(connect.reload());
 });
 
