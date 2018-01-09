@@ -48,6 +48,18 @@ input{
 			height: 230px;
 			margin-top: 20px;
 			font-size: 12px;
+			.tip{
+				height: 40px;
+				line-height: 40px;
+				position: absolute;
+				padding-left: 10px;
+				color: #f49f26;
+			}
+			#tip_2{
+				position: absolute;
+				padding-top: 10px;
+				color: #f49f26;
+			}
 			.text{
 				width: 400px;
 				height: 40px;
@@ -56,6 +68,9 @@ input{
 				padding-left: 20px;
 				margin-bottom: 20px;
 			}
+			.bor_color{
+				border-color: #f49f26;
+			}
 			label{
 				cursor: pointer;
 				.check{
@@ -63,7 +78,6 @@ input{
 					height: 15px;
 					float: left;
 					margin-right: 10px;
-					background: url(../img/commonSprite.png) no-repeat 0 -80px;
 				}
 			}
 			a{

@@ -56,6 +56,7 @@
 				z-index: 999;
 				float: left;
 				background: url(../img/index/category-back.png);
+				/*background: rgba(95, 95, 95, 0.6);*/
 				ul{
 					color: #fff;
 					font-size: 14px;
@@ -199,20 +200,30 @@
 			width: 1080px;
 			height: 280px;
 			overflow: hidden;
-			&:hover{
+			/*&:hover{
 				li{
 					width: 80px;
 				}
-			}
+			}*/
 			li{
 				width: 80px;
 				height: 280px;
 				float: left;
-				padding: 0 5px;
-				transition: all 1s; /*值1表示所有属性 值2表示过渡动画的时间*/
+				padding-left: 12px;
+				overflow: hidden;
+				/*transition: all 1s; 值1表示所有属性 值2表示过渡动画的时间
 				&:hover{
 					width: 620px;
+				}*/
+				&:first-child{
+					padding-left: 0px;
 				}
+			}
+			.onminW{
+				width: 80px;
+			}
+			.onmaxW{
+				width: 620px;
 			}
 		}
 	}
@@ -358,3 +369,96 @@
 		}
 	}
 }
+.fidx_top{
+	display: none;
+	width: 100%;
+	height: 60px;
+	background: #fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,.05);
+	z-index: 99999;
+	position: fixed;
+	top: 0;
+	.conts{
+		width: 1080px;
+		height: 60px;
+		margin: auto;
+		.p_c{
+			width: 90px;
+			height: 60px;
+			line-height: 60px;
+			float: left;
+			color: #666;
+			cursor: pointer;
+			i{
+				float: right;
+			}
+			.left{
+				display: none;
+				width: 200px;
+				height: 360px;
+				position: absolute;
+				z-index: 999;
+				float: left;
+				background: url(../img/index/category-back.png);
+				/*background: rgba(95, 95, 95, 0.6);*/
+				ul{
+					color: #fff;
+					font-size: 14px;
+					margin-top: 20px;
+					li{
+						padding-left: 30px;
+						box-sizing: border-box;
+						width: 200px;
+						line-height: 40px;
+						cursor: pointer;
+						&:hover{
+							background:#838185;
+						}
+						a{
+							color: #fff;
+							&:hover{
+								color:#f7b200;
+							}
+						}
+						span{
+							font-size: 16px;
+							margin: 0 5px;
+						}
+					}
+				}
+			}
+			&:hover{
+				.left{
+					display: block;
+				}
+			}
+		}
+		.search{
+			width: 350px;
+			height: 40px;
+			float: right;
+			margin-top: 9px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			.text{
+				width: 307px;
+				height: 40px;
+				float: left;
+				margin-left: 2px;
+				padding-left: 10px;
+				box-sizing: border-box;
+				border: none;
+				border-right: 1px solid #ccc;
+			}
+			button{
+				cursor: pointer;
+				width: 40px;
+				height: 40px;
+				float: left;
+				border: none;
+				background: url(../img/search.png) no-repeat center center;
+			}
+		}
+	}
+}
+

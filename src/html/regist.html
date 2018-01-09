@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>用户注册</title>
+	<script src="/lib/jquery/jquery-1.12.4.min.js"></script>
 	<script src="/lib/requirejs/require.js" data-main="/js/regist"></script>
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<link rel="stylesheet" type="text/css" href="../css/regist.css">
@@ -13,13 +14,18 @@
 		<div class="box">
 			<h4><b></b>用户注册</h4>
 			<form class="frm">
-				<input type="text" placeholder="请输入手机号" class="text" ><br>
-				<input type="text" placeholder="请输入短信验证码" class="text yzm" >
-				<button class="hqyzm">获取验证码</button><br>
-				<input type="password" placeholder="请输入6-32位登录密码" class="text" ><br>
-				<input type="password" placeholder="请再次输入登录密码" class="text" ><br>
-				<label><b class="check"></b>我已阅读并同意</label>
+				<input type="text" placeholder="请输入手机号" class="text" id="names" >
+				<span class="tip" id="name_tip"></span><br>
+				<input type="text" placeholder="请输入短信验证码" class="text yzm" id="yzms" >
+				<button class="hqyzm">获取验证码</button>
+				<span class="tip" id="yzm_tip"></span><br>
+				<input type="password" placeholder="请输入6-32位登录密码" class="text" id="pwd" >
+				<span class="tip" id="pwd_tip"></span><br>
+				<input type="password" placeholder="请再次输入登录密码" class="text" id="repwd" >
+				<span class="tip" id="repwd_tip"></span><br>
+				<label><input type="checkbox" name="" class="check">我已阅读并同意</label>
 				<a href="#">《必要服务协议》</a><br>
+				<span id="tip_2"></span>
 				<input type="submit" value="注册" id="btn" >
 			</form>
 		</div>

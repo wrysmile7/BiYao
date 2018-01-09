@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>用户登录</title>
+	<script src="/lib/jquery/jquery-1.12.4.min.js"></script>
 	<script src="/lib/requirejs/require.js" data-main="/js/login"></script>
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<link rel="stylesheet" type="text/css" href="../css/login.css">
@@ -13,10 +14,11 @@
 		<div class="box">
 			<h4><b></b>用户登录<a href="#">短信登录<img src="../img/phone.png"></a></h4>
 			<form class="frm">
-				<input type="text" placeholder="请输入手机号" class="text" ><br>
-				<input type="password" placeholder="请输入登录密码" class="text" ><br>
-				<label><b class="check"></b>下次自动登录</label>
+				<input type="text" placeholder="请输入手机号" class="text" id="names" ><span class="tip" id="name_tip"></span><br>
+				<input type="password" placeholder="请输入登录密码" class="text" id="pwds" ><span class="tip" id="pwd_tip"></span><br>
+				<label id="redmd"><input type="checkbox" name="" class="check">记住密码</label>
 				<a href="#">忘记密码</a><br>
+				<span id="tip_2"></span>
 				<input type="submit" value="登录" id="btn" >
 			</form>
 			<div class="more">

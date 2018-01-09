@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>详情</title>
-	<script src="/lib/requirejs/require.js" data-main="/js/man"></script>
+	<script src="/lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="/lib/jquery_plugins/jquery.elevateZoom-3.0.8.min.js"></script>
+	<script src="/lib/requirejs/require.js" data-main="/js/details"></script>
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<link rel="stylesheet" type="text/css" href="../css/details.css">
 </head>
@@ -19,10 +21,10 @@
 		</div>
 		<div class="connt">
 			<div class="left">
-				<div class="big">
-					<img src="../img/details/big1.jpg">
+				<div id="midles">
+					<img src="../img/details/big1.jpg" id="imag">
 				</div>
-				<ul>
+				<ul id="imags">
 					<li><img src="../img/details/big1.jpg"></li>
 					<li><img src="../img/details/big2.jpg"></li>
 					<li><img src="../img/details/big3.jpg"></li>

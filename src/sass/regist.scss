@@ -26,8 +26,6 @@ input{
 				height: 25px;
 				margin-right: 10px;
 				float: left;
-				background: url(../img/sprit_biyao.png) no-repeat center center;
-				background-position: 0 -522px;
 			}
 		}
 		.frm{
@@ -35,9 +33,33 @@ input{
 			height: 230px;
 			margin-top: 20px;
 			font-size: 12px;
+			position: relative;
+			.tip{
+				width: 300px;
+				height: 40px;
+				line-height: 40px;
+				color: #f49f26;
+				position: absolute;
+				padding-left: 10px;
+			}
+			#yzm_tip{
+				top: 60px;
+			}
+			#pwd_tip{
+				top: 120px;
+			}
+			#repwd_tip{
+				top: 180px;
+			}
+			#tip_2{
+				position: absolute;
+				color: #f49f26;
+				bottom: -50px;
+			}
 			.text{
 				width: 400px;
 				height: 40px;
+				float: left;
 				box-sizing: border-box;
 				border: 1px solid #ccc;
 				padding-left: 20px;
@@ -45,6 +67,7 @@ input{
 			}
 			.yzm{
 				width: 240px;
+				float: left;
 			}
 			.hqyzm{
 				width: 140px;
@@ -52,7 +75,8 @@ input{
 				background: #724a88;
 				color: #fff;
 				border: none;
-				float: right;
+				float: left;
+				margin-left: 20px;
 			}
 			label{
 				cursor: pointer;
@@ -80,6 +104,9 @@ input{
 				border: none;
 				margin-top: 30px;
 				cursor: pointer;
+			}
+			.bor_color{
+				border-color: #f49f26;
 			}
 		}
 	}
