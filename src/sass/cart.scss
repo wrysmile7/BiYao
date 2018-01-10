@@ -1,6 +1,12 @@
 .hid{
 	display: none;
 }
+.ckd{
+	width: 15px;
+	height: 15px;
+	position: relative;
+	top: 3px;
+}
 .main{
 	width: 100%;
 	border-top: 1px solid #ccc;
@@ -86,6 +92,72 @@
 		}
 		.cart_body{
 			width: 1080px;
+			background: #fff;
+			table{
+				width: 1080px;
+				tr{
+					height: 120px;
+					width: 1080px;
+					font-size: 12px;
+					border-bottom: 1px dotted #ccc;
+					td{
+						border-bottom: 1px dotted #ccc;
+						img{
+							width: 100px;
+							height: 100px;
+						}
+					}
+					.chek{
+						width: 30px;
+						padding-left: 10px;
+					}
+					.info{
+						line-height: 25px;
+						padding-left: 30px;
+						color: #666;
+						a{
+							color: #523669;
+						}
+					}
+					.pric{
+						color: #f49f26;
+					}
+					.num{
+						width: 78px;
+						position: relative;
+						left: 30px;
+						border: 1px solid #b3b3b3;
+						color: #8c8b8b;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						span{
+							box-sizing: border-box;
+							display: inline-block;
+							width: 30px;
+							cursor: pointer;
+							text-align: center;
+							line-height: 26px;
+						}
+					}
+					#min_total{
+						padding-right: 14px;
+					}
+					.del{
+						i{
+							float: left;
+							cursor: pointer;
+							width: 12px;
+							height: 12px;
+							background: url(../img/cart/a_delete.png) no-repeat -10px -32px;
+							&:hover{
+								background: url(../img/cart/a_delete.png) no-repeat -10px -10px;
+							}
+						}
+						
+					}
+				}
+			}
 		}
 		.bot{
 			width: 1080px;

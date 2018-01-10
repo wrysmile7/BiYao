@@ -40,6 +40,9 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		.pro_id{
+			display: none;
+		}
 		li{
 			width: 255px;
 			height: 335px;

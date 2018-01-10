@@ -52,4 +52,10 @@ $(function(){
 			$("#repwd_tip").text("");
 		}
 	});
+	//判断是否同意协议
+	$("#chek").click(function(){
+		if($(this).attr('checked')){
+			alert(1);
+		}
+	});
 });

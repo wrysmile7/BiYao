@@ -1,0 +1,26 @@
+{
+	"res_code" : 0,
+	"res_error" : "",
+	"res_body" : {
+		"man" : [
+			{"id":1, "price":3999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"},
+			{"id":2, "price":2899, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"},
+			{"id":3, "price":2899, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"},
+			{"id":4, "price":5999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"},
+			{"id":5, "price":7999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"},
+			{"id":6, "price":2999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"},
+			{"id":7, "price":4999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"},
+			{"id":8, "price":3099, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"}
+		],
+		"details":[
+			{"id":1, "price":3999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "big_img1":"/img/details/big1.jpg", "big_img2":"/img/details/big2.jpg", "big_img3":"/img/details/big3.jpg", "big_img4":"/img/details/big4.jpg", "big_img5":"/img/details/big5.jpg", "dt_color1":"蓝色", "dt_color2":"白色", "dt_color3":"红色"},
+			{"id":2, "price":2899, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "big_img1":"/img/details/big1.jpg", "big_img2":"/img/details/big2.jpg", "big_img3":"/img/details/big3.jpg", "big_img4":"/img/details/big4.jpg", "big_img5":"/img/details/big5.jpg", "dt_color1":"蓝色", "dt_color2":"白色", "dt_color3":"红色"},
+			{"id":3, "price":2899, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "big_img1":"/img/details/big1.jpg", "big_img2":"/img/details/big2.jpg", "big_img3":"/img/details/big3.jpg", "big_img4":"/img/details/big4.jpg", "big_img5":"/img/details/big5.jpg", "dt_color1":"蓝色", "dt_color2":"白色", "dt_color3":"红色"},
+			{"id":4, "price":5999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "big_img1":"/img/details/big1.jpg", "big_img2":"/img/details/big2.jpg", "big_img3":"/img/details/big3.jpg", "big_img4":"/img/details/big4.jpg", "big_img5":"/img/details/big5.jpg", "dt_color1":"蓝色", "dt_color2":"白色", "dt_color3":"红色"},
+			{"id":5, "price":7999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "big_img1":"/img/details/big1.jpg", "big_img2":"/img/details/big2.jpg", "big_img3":"/img/details/big3.jpg", "big_img4":"/img/details/big4.jpg", "big_img5":"/img/details/big5.jpg", "dt_color1":"蓝色", "dt_color2":"白色", "dt_color3":"红色"},
+			{"id":6, "price":2999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "big_img1":"/img/details/big1.jpg", "big_img2":"/img/details/big2.jpg", "big_img3":"/img/details/big3.jpg", "big_img4":"/img/details/big4.jpg", "big_img5":"/img/details/big5.jpg", "dt_color1":"蓝色", "dt_color2":"白色", "dt_color3":"红色"},
+			{"id":7, "price":4999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "big_img1":"/img/details/big1.jpg", "big_img2":"/img/details/big2.jpg", "big_img3":"/img/details/big3.jpg", "big_img4":"/img/details/big4.jpg", "big_img5":"/img/details/big5.jpg", "dt_color1":"蓝色", "dt_color2":"白色", "dt_color3":"红色"},
+			{"id":8, "price":3099, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "big_img1":"/img/details/big1.jpg", "big_img2":"/img/details/big2.jpg", "big_img3":"/img/details/big3.jpg", "big_img4":"/img/details/big4.jpg", "big_img5":"/img/details/big5.jpg", "dt_color1":"蓝色", "dt_color2":"白色", "dt_color3":"红色"}
+		]
+	}
+}

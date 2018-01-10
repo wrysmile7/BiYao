@@ -1,0 +1,16 @@
+{
+	"res_code" : 0,
+	"res_error" : "",
+	"res_body" : {
+		"man" : [
+			{"id":1, "price":3999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"},
+			{"id":2, "price":2899, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"},
+			{"id":3, "price":2899, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"},
+			{"id":4, "price":5999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"},
+			{"id":5, "price":7999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"},
+			{"id":6, "price":2999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"},
+			{"id":7, "price":4999, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"},
+			{"id":8, "price":3099, "dt_name":"中性复古品质纯棉磨毛衬衫-男朋友", "img":"/img/man/list1.jpg"}
+		]
+	}
+}

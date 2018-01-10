@@ -71,6 +71,9 @@
 				width: 465px;
 				height: 74px;
 				border-bottom: 1px solid #ccc;
+				#dt_id{
+					display: none;
+				}
 				h3{
 					font-size: 20px;
 					font-weight: normal;
@@ -121,6 +124,7 @@
 						float: left;
 						margin-left: 40px;
 						li{
+							cursor: pointer;
 							height: 35px;
 							padding: 0 23px;
 							text-align: center;

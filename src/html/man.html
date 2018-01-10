@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>男装</title>
+	<script src="/lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="/lib/jquery_plugins/jquery.cookie.js"></script>
 	<script src="/lib/requirejs/require.js" data-main="/js/man"></script>
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<link rel="stylesheet" type="text/css" href="../css/man.css">
@@ -23,76 +25,25 @@
 		</ul>
 		<h2>羽绒/棉服</h2>
 		<ul class="lis_all">
-			<li>
-				<a href="/html/details.html">
-					<i>
-						<img src="../img/man/1.jpg">
-					</i>
-					<dl>
-						<dt>时尚设计感中长款羽绒服</dt>
-						<dd>¥659</dd>
-					</dl>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i>
-						<img src="../img/man/1.jpg">
-					</i>
-					<dl>
-						<dt>时尚设计感中长款羽绒服</dt>
-						<dd>¥659</dd>
-					</dl>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i>
-						<img src="../img/man/1.jpg">
-					</i>
-					<dl>
-						<dt>时尚设计感中长款羽绒服</dt>
-						<dd>¥659</dd>
-					</dl>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i>
-						<img src="../img/man/1.jpg">
-					</i>
-					<dl>
-						<dt>时尚设计感中长款羽绒服</dt>
-						<dd>¥659</dd>
-					</dl>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i>
-						<img src="../img/man/1.jpg">
-					</i>
-					<dl>
-						<dt>时尚设计感中长款羽绒服</dt>
-						<dd>¥659</dd>
-					</dl>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i>
-						<img src="../img/man/1.jpg">
-					</i>
-					<dl>
-						<dt>时尚设计感中长款羽绒服</dt>
-						<dd>¥659</dd>
-					</dl>
-				</a>
-			</li>
-			<li></li>
-			<li></li>
+			
 		</ul>
 	</div>
 	<div class="footer"></div>
+	<script type="text/html" id="list_template">
+		{{each products as product}}
+		<li class="to_dt">
+			<a href="/html/details.html">
+				<b class="pro_id">{{product.id}}</b>
+				<i>
+					<img src="{{product.img}}">
+				</i>
+				<dl>
+					<dt>{{product.dt_name}}</dt>
+					<dd>¥{{product.price}}</dd>
+				</dl>
+			</a>
+		</li>
+		{{/each}}
+	</script>
 </body>
 </html>
