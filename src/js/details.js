@@ -1,5 +1,6 @@
 require(["config"], function(){
 	require(["jquery","template","cookie","load"], function($,template){
+		// 配置 cookie 插件的 json 数据自动转换
 		$.cookie.json = true;
 		//加载对应商品的数据
 		var contrast = $.cookie("id") + "";
@@ -24,7 +25,8 @@ require(["config"], function(){
 				html_2 = "",
 				html_3 = "",
 				html_4 = "",
-				html_5 = "";
+				html_5 = "",
+				html_6 = "";
 			$.each(array, function(index, element){
 				html_1 = `<span>${element.dt_name}</span>`;
 				html_2 = `<span>${element.id}</span>`;
@@ -34,9 +36,10 @@ require(["config"], function(){
 					<li><a href="javascript:void(0)" data-image="${element.big_img4}" data-zoom-image="${element.big_img4}"><img src="${element.big_img4}"></a></li>
 					<li><a href="javascript:void(0)" data-image="${element.big_img5}" data-zoom-image="${element.big_img5}"><img src="${element.big_img5}"></a></li>`;
 				html_4 = `${element.price}`;
-				html_5 = `<li class="nocheck">${element.dt_color1}<em></em></li>
+				html_5 = `<li id="dt_color">${element.dt_color1}<em></em></li>
 				<li class="nocheck">${element.dt_color2}<em></em></li>
 				<li class="nocheck">${element.dt_color3}<em></em></li>`;
+				html_6 = `<img src="${element.big_img1}" id="imag">`;
 			});
 			$("#dt_1").html(html_1);
 			$("#dt_id").html(html_2);
@@ -44,6 +47,52 @@ require(["config"], function(){
 			$("#details_name").html(html_1);
 			$("#details_price").html(html_4);
 			$("#details_color").html(html_5);
+			$("#midles").html(html_6);
+
+		});
+
+
+		
+		
+		// 查找 id 所表示的商品在 products 中位置
+		function exist(id, products) {
+			var idx = -1;
+			$.each(products, function(index, elemenet){
+				if (elemenet.id == id) {
+					idx = index;
+					return false;
+				}
+			});
+
+			return idx;
+		}
+		//将商品存入cookie
+		$(".btns").delegate(".addcart", "click", function(event){
+			var _box = $(this).parent().parent().parent().parent();
+			// 将当前选购商品的信息保存到对象中
+			var prod = {
+				id:_box.find("#dt_id").text(),
+				title:_box.find("#details_name").text(),
+				price:_box.find("#details_price").text(),
+				amount:_box.find("#nums").text(),
+				img:_box.find("#imag").attr("src"),
+				dtcolor:_box.find("#dt_color").text(),
+				dtsize:_box.find("#dt_size").text()
+			};
+			// 查找 cookie 中已有购物车结构
+			var _products = $.cookie("products") || [];
+			// 判断当前选购商品是否在数组中已有选购
+			var index = exist(prod.id, _products);
+			if (index === -1) {
+				// 将当前选购商品保存到数组中
+				_products.push(prod);
+			} else {
+				// 将已选购商品的数量自增
+				_products[index].amount++;
+			}
+			// 将数组存回 cookie 中
+			$.cookie("products", _products, {expires:7, path:"/"});
+			location="/html/cart.html";
 
 		});
 	});
@@ -83,14 +132,14 @@ $(function(){
 //颜色选择
 $(function(){
 	$("#details_color").on("click", "li", function(e){
-		$(this).removeClass('nocheck').attr("id","details_id").siblings().addClass('nocheck');
+		$(this).removeClass('nocheck').attr("id","dt_color").siblings().addClass('nocheck').removeAttr('id');
 	});
 });
 
 //尺寸选择
 $(function(){
 	$("#sizes li").click(function(){
-		$(this).removeClass('nocheck').attr("id","details_id").siblings().addClass('nocheck');
+		$(this).removeClass('nocheck').attr("id","dt_size").siblings().addClass('nocheck').removeAttr('id');
 	});
 });
 
@@ -117,12 +166,5 @@ $(function(){
 
 
 
-//将商品存入cookie
-$(function(){
-	$(".addcart").click(function(){
-		var _dt_id = $("#dt_id").text();
-		$.cookie("key",_dt_id,{path: "/", expires: 7});
-	});	
-});
 
 

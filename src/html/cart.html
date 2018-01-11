@@ -23,7 +23,7 @@
 			<h3>购物车</h3>
 			<div class="tatle">
 				<p class="p_l">
-					<span><input type="checkbox" checked="checked" name="" class="ckd">全选</span>
+					<span class="ck_all"><input type="checkbox" name="checkname" class="ckd ckd_all">全选</span>
 					<span>商品信息</span>
 				</p>
 				<p class="p_r">
@@ -34,24 +34,55 @@
 				</p>
 			</div>
 			<div class="cart_body">
-				<table>
-					
-				</table>
+				<!-- 定义显示购物车的模板 -->
+				<script type="text/html" id="cart_template">
+					{{each products as product}}
+					<table class="product">
+						<tr>
+							<td class="id" style="display: none;">{{product.id}}</td>
+				 			<td width="30" class="chek">
+				 				<input type="checkbox" name="checkname" class="ckd ck_product">
+				 			</td>
+				 			<td width="100" class="dtimg">
+				 				<a href="/html/details.html"><img src="{{product.img}}"></a>
+				 			</td>
+				 			<td class="info" width="535">
+				 				<a href="/html/details.html">{{product.titie}}</a>
+				 				<p>颜色:<span>{{product.dtcolor}}</span></p>
+				 				<p>尺寸:<span>{{product.dtsize}}</span></p>
+				 			</td>
+				 			<td class="pric price">¥<span>{{product.price}}</span></td>
+				 			<td>
+				 				<p class="num" width="78">
+				 					<span class="minus" style="border-right: 1px solid #e4e3e5;">-</span>
+				 					<span class="nums" style="border-right: 1px solid #e4e3e5;">{{product.amount}}</span>
+				 					<span class="adds">+</span>
+				 				</p>
+				 			</td>
+							
+				 			<td class="pric min_total">¥<span>{{product.price * product.amount}}</span></td>
+				 			<td class="del">
+				 				<i></i>
+				 			</td>
+				 		</tr>
+					</table>
+					{{/each}}
+				</script>
 			</div>
 			<div class="bot">
 				<p class="p_l">
-					<span><input type="checkbox" checked="checked" name="" class="ckd">全选</span>
-					<span><a href="javascript:void(0)">删除</a></span>
+					<!-- <span class="ck_all"><input type="checkbox" name="checkname" class="ckd ckd_all">全选</span> -->
+					<span><a href="javascript:void(0)" id="del_ck">删除选中</a></span>
 				</p>
 				<p class="p_r">
 					<span>商品总数<i id="num">0</i>件</span>
-					<span>商品总价：<i id="price">¥0</i></span>
+					<span>商品总价：<i>¥</i><i class="total">0</i></span>
 				</p>
 			</div>
 			<div class="balan">
 				<a href="/html/man.html" class="a_l">继续购物</a>
 				<p class="a_r">
-					<span>合计：<i>¥0</i></span>
+					<span>合计：<i>¥</i><i class="total">0</i></span>
 					<a href="/html/pay.html" class="pays">结算</a>
 				</p>
 			</div>

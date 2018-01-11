@@ -42,8 +42,40 @@
 			<h3>发票信息</h3>
 			<p class="bill"><i></i>开具发票</p>
 			<h3>确认订单</h3>
-			<div class="oeder">
-				
+			<div class="tatle">
+				<p class="p_r">
+					<span>单价</span>
+					<span>数量</span>
+					<span>小计</span>
+				</p>
+			</div>
+			<div class="cart_body">
+				<!-- 定义显示订单的模板 -->
+				<script type="text/html" id="cart_template">
+					{{each products as product}}
+					<table class="product">
+						<tr>
+							<td class="id" style="display: none;">{{product.id}}</td>
+				 			<td width="100" class="dtimg">
+				 				<a href="/html/details.html"><img src="{{product.img}}"></a>
+				 			</td>
+				 			<td class="info" width="535">
+				 				<a href="/html/details.html">{{product.titie}}</a>
+				 				<p>颜色:<span>{{product.dtcolor}}</span></p>
+				 				<p>尺寸:<span>{{product.dtsize}}</span></p>
+				 			</td>
+				 			<td class="pric price">¥<span>{{product.price}}</span></td>
+				 			<td>
+				 				<p class="num" width="78">
+				 					<span class="nums">{{product.amount}}</span>
+				 				</p>
+				 			</td>
+							
+				 			<td class="pric min_total">¥<span>{{product.price * product.amount}}</span></td>
+				 		</tr>
+					</table>
+					{{/each}}
+				</script>
 			</div>
 			<div class="leav_word">
 				<span>给商家留言</span>
@@ -53,11 +85,11 @@
 				<p>
 					<span>商品总数<em>0</em>件</span>
 					<span style="margin-left: 30px;">商品总价：</span>
-					<i>¥0</i>
+					<i class="total">¥0</i>
 				</p>
 				<p>
 					<span>实际支付金额：</span>
-					<b>¥0</b>
+					<b class="total">¥0</b>
 				</p>
 				<p>
 					<a href="/html/cart.html">返回购物车</a>
